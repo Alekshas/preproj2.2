@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cars list</title>
+</head>
+<body>
+<ul>
+    <th:block th:each="car:${cars}">
+        <p>
+            <a th:text="${car.getName}"></a>
+            <a th:text="${car.getMaxSpeed}"></a>
+            <a th:text="${car.getWeight}"></a>
+        </p>
+    </th:block>
+</ul>
+</div>
+</body>
+</html>
